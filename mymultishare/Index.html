@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="multishare">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My MultiShare</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/simple-css-reset/reset.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="Css/multiapp.css" />
+</head>
+
+<body>
+    <div class="container" ng-controller="loginController">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-offset-4 margin-top">
+                    <a href="#"><img src="Image/companyLogo.png" alt="Mymultishare" title="Mymultishare" class="img-responsive"></img>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 padding-zero">
+                <div class="margin-top">
+                    <div class="sign-in">
+                        <a href="http://localhost:9999/auth/twitter" class="large button button-short">
+                            <i class="fa fa-twitter"></i> <span>Sign in with Twitter</span>
+                        </a>
+                        <a href="http://localhost:9999/auth/facebook" class="large button button-short">
+                            <i class="fa fa-facebook"></i> Sign in with Facebook
+                        </a>
+                        <a href="#" class="large button button-short">
+                            <i class="fa fa-linkedin"></i>Sign in with LinkedIn
+                        </a>
+                        <a class="large button button-short" ng-click="openCustomLoginPopup()" href="javascript:void(0)">
+                            <span class="glyphicon glyphicon-envelope envelopeIcon"></span> Sign in with email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"></div>
+            <form ng-submit="submit()">
+                <div class="col-md-6 form-group">
+                    <div ng-show="show">
+                        <input type="text" ng-model="username" id="username" class="form-control multiapp_textbox" placeholder="Usename">
+                        <input type="email" ng-model="email" class="form-control multiapp_textbox" id="Useremail" placeholder="Email">
+                        <input type="password" ng-model="password" id="userPassword" class="form-control multiapp_textbox" placeholder="Password">
+                        <input type="password" ng-model="confirmpassword" id="confirmPassword" class="form-control multiapp_textbox" placeholder="Confirm Password">
+
+                    </div>
+                    <div ng-hide="hide">
+                        <input type="email" ng-model="email" class="form-control multiapp_textbox" id="Useremail" placeholder="Email">
+                        <input type="password" ng-model="password" id="userPassword" class="form-control multiapp_textbox" placeholder="Password">
+                    </div>
+                    <div>
+                        <input class="button_multishare button-multishare button--border-thin button--text-thick" type="submit" value="SIGN IN" ng-click="showSignIn();">
+                        <input class="button_multishare button-multishare button--border-thin button--text-thick" type="submit" value="SIGN UP" ng-click="showSignUp();">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="app.js"></script>
+    <script src="Controller/loginController.js"></script>
+    <script src="Controller/customLoginController.js"></script>
+    <script src="Routes/multishareroute.js"></script>
+</body>
+
+</html>

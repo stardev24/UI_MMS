@@ -1,0 +1,215 @@
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    body {
+        background-image: url(../Image/bg2.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    a:hover,
+    a:visited,
+    a:link,
+    a:active {
+        text-decoration: none !important;
+        border: 1px solid #ced7df;
+        color: #363c40 !important;
+    }
+    
+    textarea:hover,
+    input:hover,
+    textarea:active,
+    input:active,
+    textarea:focus,
+    input:focus,
+    button:focus,
+    button:active,
+    button:hover {
+        outline: 0px !important;
+        -webkit-appearance: none;
+    }
+    
+    .container {
+        width: 100% !important;
+    }
+    
+    .margin-top {
+        margin-top: 15%;
+    }
+    
+    .sign-in {
+        height: 100%;
+        padding-right: 45%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding-top: 20px;
+    }
+    
+    .button,
+    button,
+    input[type=submit],
+    input[type=reset],
+    input[type=button] {
+        background: #fff;
+        background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#fff));
+        background: -webkit-linear-gradient(bottom, #fff 0, #fff 100%);
+        background: linear-gradient(to top, #fff 0, #fff 100%);
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        color: #363c40;
+        text-decoration: none;
+        line-height: 21px;
+        text-shadow: none;
+        margin-bottom: 20px;
+        margin-left: 0;
+        padding: 8px 20px;
+        display: inline-block;
+        cursor: pointer;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 1px solid #ced7df;
+        border-radius: 3px;
+        position: relative;
+        top: 0;
+    }
+    
+    .button.large,
+    button.large,
+    input[type=submit].large,
+    input[type=reset].large,
+    input[type=button].large {
+        padding: 20px 40px;
+        font-size: 15.4px;
+    }
+    
+    .sign-in .button {
+        padding: 25px 0 29px;
+        font-size: 16px;
+        margin: 0 15px 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .sign-in .button.button-short {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    
+    .sign-in a,
+    .sign-in a:hover {
+        color: #363c40;
+    }
+    
+    .sign-in i,
+    .envelopeIcon {
+        position: relative;
+        left: -28px;
+        top: 1px;
+    }
+    
+    .login-opt {
+        text-align: center;
+        padding: 0;
+    }
+    
+    .modal-body a {
+        width: 35rem !important;
+    }
+    
+    .login-opt-divider {
+        border-bottom: 1px solid #ced7df;
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    .divider-text {
+        position: absolute;
+        left: 46%;
+        top: -20px;
+        background: #fff;
+        padding: 1rem;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    }
+    
+    .app-col-md-12 {
+        width: 74% !important;
+        margin-left: 45px;
+    }
+    
+    .button_multishare {
+        float: left;
+        min-width: 150px;
+        max-width: 250px;
+        display: block;
+        margin: 1em;
+        padding: 1em 2em;
+        border: none;
+        background: none;
+        color: #37474f;
+        vertical-align: middle;
+        position: relative;
+        z-index: 1;
+        -webkit-backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .button_multishare:focus {
+        outline: none;
+    }
+    
+    .button--text-thick {
+        font-weight: 600;
+    }
+    
+    .button--border-thin {
+        border: 1px solid;
+    }
+    
+    .button-multishare::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #37474f;
+        z-index: -1;
+        opacity: 0;
+        -webkit-transform: scale3d(0.7, 1, 1);
+        transform: scale3d(0.7, 1, 1);
+        -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+        transition: transform 0.4s, opacity 0.4s;
+        -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    }
+    
+    .button-multishare:hover,
+    .button-multishare:focus,
+    .button-multishare:active {
+        background: #37474f;
+        color: #ffffff;
+    }
+    
+    .padding-zero {
+        padding-left: 0;
+    }
+    
+    .multiapp_textbox {
+        width: 56%;
+        margin: 0 0 20px 0;
+        border: none !important;
+        border-bottom: 1px solid #ced7df !important;
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none !important;
+    }

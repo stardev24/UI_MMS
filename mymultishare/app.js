@@ -1,0 +1,1 @@
+var multishare = angular.module('multishare', ['ngRoute', 'ui.bootstrap']);
