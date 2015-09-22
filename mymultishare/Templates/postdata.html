@@ -1,0 +1,57 @@
+<div>
+    <div id="tabs" style="display:inline-block;">
+        <ul class="app_tabs">
+            <li ng-repeat="tab in tabs" ng-class="{active:isActiveTab(tab.url)}" ng-click="onClickTab(tab)">{{tab.title}}</li>
+        </ul>
+        <div id="mainView">
+            <div ng-include="currentTab"></div>
+        </div>
+    </div>
+    <script type="text/ng-template" id="one.tpl.html">
+        <div id="viewOne" class="clear">
+            <ul class="subtabs">
+                <li ng-repeat="sub in subtabs" ng-class="{subTabsActive:isActiveSubTab(sub.url)}" ng-click="onClickSubTab(sub)">{{sub.title}}</li>
+            </ul>
+        </div>
+        <div ng-include="subMenuTab" class="clear"></div>
+    </script>
+
+    <script type="text/ng-template" id="two.tpl.html">
+        <div id="viewTwo" class="clear">
+            coming soon...
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="three.tpl.html">
+        <div id="viewThree" class="clear">
+            coming soon settings...
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="queue.tpl.html">
+        <div id="viewFour" class="clear">
+            <form>
+                <div id="postMessage">
+                    <div class="messageArea">
+                        <textarea id="message" placeholder="Type here to share" autocomplete="off"></textarea>
+                    </div>
+                    <div class="photoPostArea">
+                        <input id="input-4" type="file" multiple=true class="file-loading">
+                    </div>
+
+                </div>
+                <div>
+                    <input class="button_multishare button-multishare button--border-thin button--text-thick" type="submit" value="Clear">
+                    <input class="button_multishare button-multishare button--border-thin button--text-thick" type="submit" value="Post">
+                </div>
+            </form>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="contribution.tpl.html">
+        <div id="viewFive" class="clear">
+            coming soon contribution.tpl.html...
+        </div>
+    </script>
+
+</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="multishare">
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="Css/multiapp.css" />
 </head>
 
-<body>
+<body ng-app="multishare">
     <div class="container" ng-controller="loginController">
         <div class="row">
             <div class="col-md-6">
@@ -43,7 +43,7 @@
         </div>
         <div class="row">
             <div class="col-md-6"></div>
-            <form ng-submit="submit()">
+            <form>
                 <div class="col-md-6 form-group">
                     <div ng-show="show">
                         <input type="text" ng-model="username" id="username" class="form-control multiapp_textbox" placeholder="Usename">
@@ -53,12 +53,12 @@
 
                     </div>
                     <div ng-hide="hide">
-                        <input type="email" ng-model="email" class="form-control multiapp_textbox" id="Useremail" placeholder="Email">
-                        <input type="password" ng-model="password" id="userPassword" class="form-control multiapp_textbox" placeholder="Password">
+                        <input type="email" ng-model="user.signInEmail" class="form-control multiapp_textbox" id="Useremail" placeholder="Email">
+                        <input type="password" ng-model="user.password" id="userPassword" class="form-control multiapp_textbox" placeholder="Password">
                     </div>
                     <div>
-                        <input class="button_multishare button-multishare button--border-thin button--text-thick" type="submit" value="SIGN UP" ng-click="showSignIn();">
-                        <input class="button_multishare button-multishare button--border-thin button--text-thick" type="submit" value="SIGN IN" ng-click="showSignUp();">
+                        <input class="button_multishare button-multishare button--border-thin button--text-thick" type="submit" value="SIGN IN" ng-click="showSignIn(user)">
+                        <input class="button_multishare button-multishare button--border-thin button--text-thick" type="submit" value="SIGN UP" ng-click="showSignUp();">
                     </div>
                 </div>
             </form>
@@ -72,7 +72,7 @@
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="app.js"></script>
     <script src="Controller/loginController.js"></script>
-    <script src="Controller/customLoginController.js"></script>
+    <script src="Controller/homeController.js"></script>
     <script src="Routes/multishareroute.js"></script>
 </body>
 

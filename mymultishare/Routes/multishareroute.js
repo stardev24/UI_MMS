@@ -1,8 +1,12 @@
 multishare.config(function ($routeProvider) {
     $routeProvider
-
-    /*    .when('/customLogin', {
-        templateUrl: 'Templates/CustomLogin.html',
-        controller: 'customLoginController'
-    })*/
+        .when('/home', {
+            templateUrl: '../Templates/postdata.html',
+            controller: 'postdataController'
+        }).when('/addAccount', {
+            templateUrl: '../Templates/addAccounts.html',
+            controller: 'homeController'
+        }).otherwise({
+            redirectTo: '/home'
+        })
 });

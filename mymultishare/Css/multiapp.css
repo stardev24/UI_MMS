@@ -10,6 +10,10 @@
         overflow: hidden;
     }
     
+    .clear {
+        clear: both;
+    }
+    
     a:hover,
     a:visited,
     a:link,
@@ -17,6 +21,10 @@
         text-decoration: none !important;
         border: 1px solid #ced7df;
         color: #363c40 !important;
+    }
+    
+    .noBorder {
+        border: none !important;
     }
     
     textarea:hover,
@@ -34,6 +42,11 @@
     
     .container {
         width: 100% !important;
+    }
+    
+    .logo_header {
+        height: 80px;
+        padding-top: 14px;
     }
     
     .margin-top {
@@ -212,4 +225,143 @@
         border-radius: 0;
         background-color: transparent;
         box-shadow: none !important;
+    }
+    
+    .home-container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .masthead {
+        border-bottom: 1px solid #ced7df;
+    }
+    
+    .right_content {
+        border-right: 1px solid #ced7df;
+        width: 300px;
+        float: left;
+        min-height: 900px;
+    }
+    
+    .left_content {
+        width: 700px;
+        float: left;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+    
+    .add_accont span {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    
+    .add_glyphicon {
+        font-size: 31px !important;
+        padding-left: 10px;
+        vertical-align: initial;
+    }
+    
+    .heading {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+    }
+    
+    .app_tabs {
+        float: left;
+        border-radius: 5px;
+    }
+    
+    .app_tabs li {
+        float: left;
+        background-color: rgb(200, 200, 200);
+        padding: 10px 70px;
+        list-style: none;
+        display: inline-block;
+        width: 211px;
+        color: #ffffff !important;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .app_tabs li:hover,
+    .app_tabs li:hover a {
+        background-color: rgb(6, 179, 6);
+    }
+    
+    .app_tabs li a {
+        text-decoration: none;
+        text-shadow: 1px 0px 3px rgb(157, 157, 157);
+        border: none !important;
+        border: none !important;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    
+    .app_tabs li:nth-child(1) {
+        border-radius: 4px 0px 0px 4px;
+        margin-left: 1px;
+    }
+    
+    .app_tabs li:nth-child(3) {
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    .active {
+        background-color: rgb(6, 179, 6) !important;
+    }
+    
+    .subtabs {
+        float: left;
+        border-bottom: 1px solid #ced7df;
+    }
+    
+    .subtabs li {
+        float: left;
+        padding: 10px 76px;
+        list-style: none;
+        display: inline-block;
+        width: 211px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .subTabsActive {
+        border-bottom: 5px solid rgb(6, 179, 6);
+    }
+    
+    #postMessage {
+        background: #fff;
+        z-index: 10;
+        padding: 20px;
+        border-radius: 3px;
+        border: 1px solid #ced7df;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        padding: 0;
+        max-width: 540px;
+        display: block;
+        min-height: 165px;
+    }
+    
+    #message {
+        margin: 0;
+        border: 0;
+        padding: 10px 20px;
+        resize: none;
+        width: 94%;
+        min-height: 100px;
+        max-height: 250px;
+        font-size: 14px;
+        line-height: 1.2;
+        overflow: auto;
+        border-radius: 0;
+        background-clip: padding-box;
+        -webkit-transition: opacity .25s ease-in-out;
+        transition: opacity .25s ease-in-out;
+    }
+    
+    .photoPostArea {
+        padding: 10px 20px;
     }

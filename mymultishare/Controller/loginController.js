@@ -1,15 +1,15 @@
 (function () {
     'use strict';
-    multishare.controller('loginController', ['$scope', '$modal', function ($scope, $modal) {
-        $scope.showSignIn = function () {
+    multishare.controller('loginController', ['$scope', '$location', function ($scope, $location) {
+
+        $scope.showSignIn = function (user) {
             $scope.show = true;
             $scope.hide = true;
         }
-        $scope.showSignUp = function () {
+        $scope.showSignUp = function (user) {
             $scope.show = false;
             $scope.hide = false;
+
         }
-
-        }]);
-
+         }])
 }());
